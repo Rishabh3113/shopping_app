@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/shape5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/person" />
+
+            <EditText
+                android:id="@+id/registermail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="enter your registered mail " />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:text="reset"
+
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:text="cancel"
+
+            app:cornerRadius="30dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

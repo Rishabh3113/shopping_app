@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:animationCache="true"
+    app:cardCornerRadius="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/phoneimage"
+        android:src="@drawable/mobiles"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:text="Model"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/phonemodel"
+        android:gravity="center"
+        android:maxLines="4"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="price"
+        android:id="@+id/phoneprice"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="0"
+        android:id="@+id/phonedesc"
+        android:layout_gravity="bottom"
+        android:text="description"/>
+</androidx.cardview.widget.CardView>
